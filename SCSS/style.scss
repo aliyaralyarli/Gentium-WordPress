@@ -179,7 +179,7 @@
                 hr {
                     background-color: #fff;
                     border: 1px solid #fff;
-                    transform: rotate(360deg);
+                    transform: rotate(720deg);
                 }
                 i {
                     color: #fff;
@@ -349,6 +349,77 @@
                 font-size: 17px;
                 color: #747474;
                 line-height: 1.4;
+            }
+        }
+    }
+    .all-card {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        .left {
+            width: 63%;
+            height: 550px;
+            .box {
+                height: 100%;
+                position: relative;
+                &:hover{
+                    img{
+                        filter: grayscale(0) brightness(.5);
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    filter: grayscale(1);
+                    transition: .4s;
+                }
+                .text {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 20px;
+                    z-index: 1;
+                    h3 {
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                    p {
+                        font-size: 17px;
+                        color: #ffffffe6;
+                    }
+                }
+            }
+        }
+        .right {
+            width: 35%;
+            height: 120px;
+            .box {
+                margin-bottom: 10px;
+                position: relative;
+                &:hover{
+                    img{
+                        filter: grayscale(0) brightness(.5);
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    filter: grayscale(1);
+                    transition: .4s;
+                }
+                .text {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 20px;
+                    z-index: 1;
+                    h3 {
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                    p {
+                        font-size: 17px;
+                        color: #ffffffe6;
+                    }
+                }
             }
         }
     }
@@ -615,22 +686,22 @@
 footer {
     padding: 40px 0;
     background-color: #000;
-    .all{
+    .all {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .left{
+        .left {
             color: #747474;
             font-size: 15px;
         }
-        .right{
-            a{
+        .right {
+            a {
                 text-decoration: none;
                 color: #fff;
                 font-size: 15px;
                 margin-left: 15px;
                 position: relative;
-                transition: .4s;
+                transition: 0.4s;
                 &:hover {
                     color: #e9204f;
                     &::before {
@@ -646,6 +717,85 @@ footer {
                     height: 2px;
                     background-color: #e9204f;
                     transition: 0.4s;
+                }
+            }
+        }
+    }
+}
+#services {
+    .text {
+        hr {
+            height: 2px;
+            width: 45px;
+            margin-bottom: 20px;
+            background-color: #e9204f;
+            border: 1px solid #e9204f;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 48px;
+            color: #101010;
+            font-weight: 700;
+        }
+        h4 {
+            font-size: 18px;
+            color: #e9204f;
+            font-weight: 700;
+            margin: 20px 0 50px;
+        }
+    }
+    .all {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .box {
+            width: 30%;
+            margin-right: 25px;
+            margin-bottom: 25px;
+            padding: 40px 30px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: #f3f3f3;
+            transition: 0.4s;
+            &:hover {
+                background-color: #e9204f;
+                .left {
+                    i {
+                        transform: scale(5) translateX(-5px);
+                        opacity: 1;
+                    }
+                }
+                .mid {
+                    h5 {
+                        color: #fff;
+                        letter-spacing: 0.5px;
+                        transform: translateX(15px);
+                    }
+                }
+            }
+            .left {
+                i {
+                    color: rgb(204, 192, 176);
+                    transition: 1;
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+            }
+            .mid {
+                h5 {
+                    color: #101010;
+                    font-size: 20px;
+                    font-weight: bold;
+                    transition: 0.4s;
+                }
+            }
+            .right {
+                i {
+                    font-size: 20px;
+                    color: rgb(104, 102, 102);
+                    transition: 0.4s;
+                    transform: translateX(100px);
                 }
             }
         }

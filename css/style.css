@@ -199,7 +199,7 @@
 .second .all .box:nth-child(3):hover hr {
   background-color: #fff;
   border: 1px solid #fff;
-  transform: rotate(360deg);
+  transform: rotate(720deg);
 }
 
 .second .all .box:nth-child(2):hover i,
@@ -383,6 +383,88 @@
   font-size: 17px;
   color: #747474;
   line-height: 1.4;
+}
+
+.about .all-card {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .all-card .left {
+  width: 63%;
+  height: 550px;
+}
+
+.about .all-card .left .box {
+  height: 100%;
+  position: relative;
+}
+
+.about .all-card .left .box:hover img {
+  filter: grayscale(0) brightness(0.5);
+}
+
+.about .all-card .left .box img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  transition: .4s;
+}
+
+.about .all-card .left .box .text {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1;
+}
+
+.about .all-card .left .box .text h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.about .all-card .left .box .text p {
+  font-size: 17px;
+  color: #ffffffe6;
+}
+
+.about .all-card .right {
+  width: 35%;
+  height: 120px;
+}
+
+.about .all-card .right .box {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.about .all-card .right .box:hover img {
+  filter: grayscale(0) brightness(0.5);
+}
+
+.about .all-card .right .box img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  transition: .4s;
+}
+
+.about .all-card .right .box .text {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1;
+}
+
+.about .all-card .right .box .text h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.about .all-card .right .box .text p {
+  font-size: 17px;
+  color: #ffffffe6;
 }
 
 #client {
@@ -700,7 +782,7 @@ footer .all .right a {
   font-size: 15px;
   margin-left: 15px;
   position: relative;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 footer .all .right a:hover {
@@ -720,5 +802,81 @@ footer .all .right a::before {
   height: 2px;
   background-color: #e9204f;
   transition: 0.4s;
+}
+
+#services .text hr {
+  height: 2px;
+  width: 45px;
+  margin-bottom: 20px;
+  background-color: #e9204f;
+  border: 1px solid #e9204f;
+  margin-bottom: 40px;
+}
+
+#services .text h2 {
+  font-size: 48px;
+  color: #101010;
+  font-weight: 700;
+}
+
+#services .text h4 {
+  font-size: 18px;
+  color: #e9204f;
+  font-weight: 700;
+  margin: 20px 0 50px;
+}
+
+#services .all {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#services .all .box {
+  width: 30%;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  transition: 0.4s;
+}
+
+#services .all .box:hover {
+  background-color: #e9204f;
+}
+
+#services .all .box:hover .left i {
+  transform: scale(5) translateX(-5px);
+  opacity: 1;
+}
+
+#services .all .box:hover .mid h5 {
+  color: #fff;
+  letter-spacing: 0.5px;
+  transform: translateX(15px);
+}
+
+#services .all .box .left i {
+  color: #ccc0b0;
+  transition: 1;
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+#services .all .box .mid h5 {
+  color: #101010;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#services .all .box .right i {
+  font-size: 20px;
+  color: #686666;
+  transition: 0.4s;
+  transform: translateX(100px);
 }
 /*# sourceMappingURL=style.css.map */
